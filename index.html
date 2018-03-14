@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo app</title>
+
+    <style>
+        .header{
+            background-color: yellow;
+            text-align: center;
+            margin: 10px auto;
+            padding: 20px;
+        }
+        .create {
+            display: inline-flex;
+            width: 755px;
+            height: 30px;
+            border: 1px;
+        }
+        #main{
+            background-color: white;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .completed{
+            background-color: darkgray;
+        }
+        .list{
+            position: relative;
+            margin: 10px auto;
+            padding: 15px;
+        }
+        ul{
+
+            list-style-type: none;
+        }
+        .close{
+            position: absolute;
+            right: 0;
+            background-color: white;
+        }
+        li{
+            text-align: left;
+            width: auto;
+            height: 30px;
+        }
+        span.close{
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>UET Code Camp's Todo List</h1>
+
+    <form class="create">
+        <input type="text" placeholder="Title..." style="width: 75%"><button style="width: 25%">Add</button>
+    </form>
+</div>
+
+<div id="main">
+    <ul class="list">
+        <li class="completed">Buy eggs <span class="close">×</span></li>
+        <li>Read a book <span class="close">×</span></li>
+        <li>Organize office <span class="close">×</span></li>
+        <li>UET Code Camp 2018 <span class="close">×</span></li>
+    </ul>
+</div>
+</body>
+</html>
